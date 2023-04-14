@@ -9,7 +9,7 @@ function App() {
   const handleClick = async (event) => {
     setIsLoading(true);
     debugger;
-    const response = await fetch("https://meowfacts.herokuapp.com/")
+    const response = await fetch("https://meowfacts.herokuapp.com/" )
     const jsonData = await response.json();
     setQuote(jsonData.data[0])
     setIsLoading(false);
